@@ -1,0 +1,42 @@
+/* src/components/GameDetailPage.css */
+
+/* Style the game detail page container */
+.game-detail-page {
+  background-color: #141b0d; /* Dark green background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+  max-width: 600px; /* Limit the width of the details */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 20px; /* Add some spacing from the top */
+}
+
+/* Style headings */
+.game-detail-page h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style paragraphs */
+.game-detail-page p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the back button */
+.back-button {
+  display: block;
+  margin-top: 20px; /* Add spacing below the details */
+  text-align: center;
+}
+
+.back-button a {
+  color: #ffcc29; /* Yellow color for the link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-button a:hover {
+  text-decoration: underline;
+}
