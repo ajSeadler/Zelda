@@ -27,7 +27,7 @@ function DungeonList() {
       <Link to="/" style={{ margin: '15px' }}>Back to Home</Link>
 
 
-      {/* Add the search input field */}
+      {/* Add the search input fijld */}
       <div className="search-container">
         <input
           type="text"
@@ -46,6 +46,7 @@ function DungeonList() {
           </li>
         ))}
       </ul>
+      <Link to="/" style={{ margin: '15px' }}>Back to Home</Link>
     </div>
   );
 }
