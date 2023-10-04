@@ -23,7 +23,7 @@ body {
 h1 {
   font-family: 'Hylia Serif'; /* Apply the Hylia Serif font */
   font-size: auto; /* Adjust font size as needed */
-  color: #ffcc29; /* Yellow color similar to Ocarina of Time logo */
+  color: #ffffff; /* Yellow color similar to Ocarina of Time logo */
   text-align: center;
   margin-top: 80px;
   text-transform: uppercase; /* Uppercase text */
@@ -32,13 +32,13 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #ffcc29;
   text-align: center;
 }
 
 /* Style links */
 a {
-  color: #ffcc29; /* Yellow color similar to Ocarina of Time logo */
+  color: #ccba80; /* Yellow color similar to Ocarina of Time logo */
   text-decoration: none;
   font-weight: bold; /* Make links bold */
 }
@@ -55,7 +55,54 @@ ul {
 }
 p {
   text-align: center;
+  color: #ccba80;
 }
+h4 {
+  color: #ccba80;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+h5 {
+  color: #ccba80;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+margin: 20px;
+}
+
+/* Monsters.css */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Hylia Serif';
+}
+
+.pagination button {
+  background-color: rgba(0, 0, 0, 0.1); /* Zelda-themed color (example) */
+  border: none;
+  color: #000; /* Text color (example) */
+  font-size: 14px; /* Adjust the font size to make the buttons smaller */
+  padding: 5px 10px; /* Adjust padding to make buttons smaller */
+  margin: 3px; /* Adjust margin to control spacing between buttons */
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: 'Hylia Serif';
+}
+
+.pagination button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Hover color (example) */
+}
+
+.pagination button.active {
+  background-color: #1f3b1c; /* Active page color (example) */
+  color: #ffcc29;
+}
+
+
 /* Center content vertically and horizontally */
 .games {
   display: flex;
@@ -73,7 +120,10 @@ p {
 /* Style the search input */
 .search-container {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .search-input {
@@ -240,7 +290,7 @@ p {
   font-family: 'hylia serif';
   margin: 5px;
   border: 2px solid #FFBC00; /* Yellow border */
-  padding: 10px 20px; /* Add padding for better spacing */
+  padding: 10px 15px; /* Add padding for better spacing */
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
 }
@@ -422,4 +472,8 @@ p {
   
 }
   
+.show-games-button, .show-games-button-1, .show-games-button-2, .show-games-button-3 {
+  padding: 10px 12px;
+}
+
 }

@@ -28,7 +28,7 @@ function GameList() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="character-list">
       <h1>Games</h1>
       <Link to="/" style={{ margin: '3px' }}>Back to Home</Link>
 

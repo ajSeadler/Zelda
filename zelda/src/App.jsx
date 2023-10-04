@@ -2,24 +2,19 @@ import React from "react";
 import { Route, Routes, Link, useNavigate } from "react-router-dom";
 import GameList from "./components/GamesList";
 import GameDetailPage from "./components/GameDetailsPage";
-// import CharacterList from "./components/CharacterList"; // Import the CharacterList component
-import DungeonList from './components/DungeonList'; // Import DungeonList component
-import Monsters from './components/Monsters'; // Import Monsters component
+import DungeonList from './components/DungeonList'; 
+import Monsters from './components/Monsters'; 
+import Equipment from "./components/Equipment"; // Import the Equipment component
 
 import "./index.css";
 import "./app.css";
 
 function HomePage() {
-  const navigate = useNavigate(); // Get the navigate function
+  const navigate = useNavigate();
 
   const handleShowGames = () => {
-    // Redirect to the games page when the button is clicked
     navigate("/games");
   };
-
-  // const handleShowCharacters = () => {
-  //   navigate("/characters");
-  // };
 
   const handleShowDungeons = () => {
     navigate("/dungeons");
@@ -29,12 +24,16 @@ function HomePage() {
     navigate("/monsters");
   };
 
+  const handleShowEquipment = () => {
+    navigate("/equipment"); // Add a function to navigate to the Equipment page
+  };
+
   return (
     <>
-      <h1 className="Z">The Legend of Zelda</h1>
+      <h1 style={{ color: "rgba(0, 0, 0, 0.5)"}}>The Legend of <br></br>Zelda</h1>
+
 
       <div className="center-container">
-        {/* Wrap everything in a centering container */}
         <div id="triforce">
           <div id="triangle" className="shadow">
             <div id="shadow"></div>
@@ -44,14 +43,15 @@ function HomePage() {
           <button className="show-games-button" onClick={handleShowGames}>
             <span>Games</span>
           </button>
-          {/* <button className="show-games-button-1" onClick={handleShowCharacters}>
-            <span>Characters</span>
-          </button> */}
-          <button className="show-games-button-2" onClick={handleShowDungeons}>
-            <span>Dungeons</span>
-          </button>
+          
           <button className="show-games-button-1" onClick={handleShowMonsters}>
             <span>Monsters</span>
+          </button>
+          <button className="show-games-button-2" onClick={handleShowEquipment}>
+            <span>Equipment</span>
+          </button>
+          <button className="show-games-button-2" onClick={handleShowDungeons}>
+            <span>Dungeons</span>
           </button>
         </div>
       </div>
@@ -65,9 +65,9 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/games" element={<GameList />} />
       <Route path="/games/:id" element={<GameDetailPage />} />
-      {/* <Route path="/characters" element={<CharacterList />} /> */}
       <Route path="/dungeons" element={<DungeonList />} />
       <Route path="/monsters" element={<Monsters />} />
+      <Route path="/equipment" element={<Equipment />} /> {/* Add the Equipment route */}
     </Routes>
   );
 }
