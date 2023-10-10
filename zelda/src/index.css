@@ -1,53 +1,64 @@
 /* src/index.css */
+/* src/index.css */
+#root {
+  margin: 50px;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
+}
 
-/* Apply global styles */
 @font-face {
-  font-family: 'Hylia Serif';
-  src: url('./components/HyliaSerifBeta-Regular.otf') format('opentype');
+  font-family: "Hylia Serif";
+  src: url("./components/HyliaSerifBeta-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
-/* Set a background color for the entire page */
 body {
-  background-color: #1f3b1c; /* Dark green background color similar to Ocarina of Time */
-  font-family: 'Hylia Serif';
-  margin: 0;
-  padding: 0;
+  background-color: #1f3b1c;
+  max-width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hylia Serif";
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
 }
-
-
-
 
 /* Style headings */
 h1 {
-  font-family: 'Hylia Serif'; /* Apply the Hylia Serif font */
-  font-size: auto; /* Adjust font size as needed */
-  color: #ffffff; /* Yellow color similar to Ocarina of Time logo */
+  font-family: "Hylia Serif";
+  font-size: auto;
+  color: #ccba80;
   text-align: center;
-  margin-top: 80px;
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 4px; /* Adjust letter spacing for a fantasy look */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.game-item h2 {
+  color: #ffcc29;
 }
 
 h2 {
-  color: #ffcc29;
+  color: #ccba80;
   text-align: center;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Style links */
 a {
-  color: #ccba80; /* Yellow color similar to Ocarina of Time logo */
+  color: #ccba80;
   text-decoration: none;
-  font-weight: bold; /* Make links bold */
+  font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-/* Remove bullet points from lists */
 ul {
   list-style: none;
   padding: 0;
@@ -62,7 +73,6 @@ h4 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 h5 {
@@ -70,40 +80,37 @@ h5 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-margin: 20px;
+  margin: 20px;
 }
 
-/* Monsters.css */
 .pagination {
   text-align: center;
   margin-top: 20px;
-  font-family: 'Hylia Serif';
+  font-family: "Hylia Serif";
 }
 
 .pagination button {
-  background-color: rgba(0, 0, 0, 0.1); /* Zelda-themed color (example) */
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
-  color: #000; /* Text color (example) */
-  font-size: 14px; /* Adjust the font size to make the buttons smaller */
-  padding: 5px 10px; /* Adjust padding to make buttons smaller */
-  margin: 3px; /* Adjust margin to control spacing between buttons */
+  color: #000;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 3px;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  font-family: 'Hylia Serif';
+  font-family: "Hylia Serif";
 }
 
 .pagination button:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Hover color (example) */
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .pagination button.active {
-  background-color: #1f3b1c; /* Active page color (example) */
+  background-color: #1f3b1c;
   color: #ffcc29;
 }
 
-
-/* Center content vertically and horizontally */
 .games {
   display: flex;
   flex-direction: column;
@@ -112,12 +119,6 @@ margin: 20px;
   min-height: 25vh;
 }
 
-/* src/components/CharacterList.css */
-
-/* Style the character list container */
-/* src/components/CharacterList.css */
-
-/* Style the search input */
 .search-container {
   margin-bottom: 20px;
   display: flex;
@@ -130,15 +131,14 @@ margin: 20px;
   padding: 10px;
   width: 100%;
   max-width: 400px;
-  border: 2px solid #ffcc29; /* Yellow border for the input */
+  border: 2px solid #ffcc29;
   border-radius: 5px;
-  background-color: #1f3b1c; /* Dark green background color */
-  color: #fff; /* Text color */
+  background-color: #1f3b1c;
+  color: #fff;
   font-size: 16px;
   outline: none;
 }
 
-/* Style the filtered character list */
 .character-list ul {
   list-style: none;
   padding: 0;
@@ -148,29 +148,28 @@ margin: 20px;
 .character-list li {
   margin: 20px 0;
   padding: 10px;
-  background-color: #141b0d; /* Dark green background color for character items */
+  background-color: #141b0d;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .character-list h3 {
   font-size: 20px;
-  color: #ffcc29; /* Yellow color for character names */
+  color: #ffcc29;
   margin-bottom: 5px;
 }
 
 .character-list p {
   font-size: 16px;
   line-height: 1.5;
-  color: #fff; /* Text color for character descriptions */
+  color: #fff;
 }
 
-/* Style the Back to Home link */
 .character-list a {
   display: block;
-  margin-top: 20px; /* Add spacing below the list */
+  margin-top: 20px;
   text-align: center;
-  color: #ffcc29; /* Yellow color for the link */
+  color: #ffcc29;
   text-decoration: none;
   font-weight: bold;
 }
@@ -180,7 +179,7 @@ margin: 20px;
 }
 
 .character-list .back-button a {
-  color: #ffcc29; /* Yellow color for the link */
+  color: #ffcc29;
   text-decoration: none;
   font-weight: bold;
 }
@@ -189,131 +188,132 @@ margin: 20px;
   text-decoration: underline;
 }
 
-
 .center-container {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  height: 45vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 #triforce {
-  margin: 50px auto;
+  margin: 0px auto;
   width: 200px;
   height: 200px;
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
-#triangle{
-	content:'';
-	position:relative;
-	width:0px;
-	height:0px;
-	border-left: 60px solid transparent;
-	border-right: 60px solid transparent;
-	border-bottom: 104px solid #FFBC00;
+#triangle {
+  content: "";
+  position: relative;
+  width: 0px;
+  height: 0px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 104px solid #ffbc00;
 }
-#triangle:before{
-	content:'';
-	position:absolute;
-	display:block;
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
-	border-bottom:104px solid #FFBC00;
-	top:104px;
-	left:-120px;
+#triangle:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 104px solid #ffbc00;
+  top: 104px;
+  left: -120px;
 }
-#triangle:after{
-	content:'';
-	position:absolute;
-	display:block;
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
-	border-bottom:104px solid #FFBC00;
-	top:104px;
+#triangle:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 104px solid #ffbc00;
+  top: 104px;
 }
-#shadow{
-	content:'';
-	width:0px;
-	height:0px;
-	position:relative;
-	z-index:-1;
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
-	border-top:104px solid #FF8C00;
-	transform:rotate(60deg);
-	-webkit-transform:rotate(60deg);
-	-moz-transform:rotate(60deg);
-	-ms-transform:rotate(60deg);
-	-o-transform:rotate(60deg);
-	top:27px;
-	left:-73px;
+#shadow {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: relative;
+  z-index: -1;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 104px solid #ff8c00;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  top: 27px;
+  left: -73px;
 }
-#shadow:before{
-	content:'';
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
-	border-top:104px solid #FF8C00;
-	position:absolute;
-	display:block;
-	top:0px;
-	left:0px;
+#shadow:before {
+  content: "";
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 104px solid #ff8c00;
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
 }
-#shadow:after{
-	content:'';
-	border-left:60px solid transparent;
-	border-right:60px solid transparent;
-	border-top:104px solid #FF8C00;
-	position:absolute;
-	display:block;
-	top:-104px;
-	left:60px;
+#shadow:after {
+  content: "";
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 104px solid #ff8c00;
+  position: absolute;
+  display: block;
+  top: -104px;
+  left: 60px;
 }
 
 .button-container {
   display: flex;
-  flex-direction: row; /* Arrange buttons vertically */
-  align-items: center; /* Center horizontally */
-  margin-top: 20px; /* Adjust margin as needed */
+  flex-direction: row; 
+  align-items: center;
+  margin-top: 20px; 
 }
 
-/* Add button styling as needed */
-/* Style the buttons */
-.show-games-button, .show-games-button-1, .show-games-button-2, .show-games-button-3 {
-  background-color: transparent; /* Transparent background */
-  color: #FFBC00; /* Yellow text color */
-  font-family: 'hylia serif';
+
+.show-games-button,
+.show-games-button-1,
+.show-games-button-2,
+.show-games-button-3 {
+  background-color: transparent;
+  color: #ffbc00;
+  font-family: "hylia serif";
   margin: 5px;
-  border: 2px solid #FFBC00; /* Yellow border */
-  padding: 10px 15px; /* Add padding for better spacing */
+  border: 2px solid #ffbc00; 
+  padding: 10px 15px; 
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Style the buttons on hover */
-.show-games-button:hover, .show-games-button-1:hover, .show-games-button-2:hover {
-  background-color: #FFBC00; /* Yellow background on hover */
-  color: #000; /* Black text color on hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+.show-games-button:hover,
+.show-games-button-1:hover,
+.show-games-button-2:hover {
+  background-color: #ffbc00;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Optional: Add some border-radius for rounded corners */
-.show-games-button, .show-games-button-1, .show-games-button-2 {
+.show-games-button,
+.show-games-button-1,
+.show-games-button-2 {
   border-radius: 5px;
 }
 
-/* Optional: Add a box shadow for depth */
-.show-games-button, .show-games-button-1, .show-games-button-2 {
+.show-games-button,
+.show-games-button-1,
+.show-games-button-2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Add button styling as needed */
 /* .show-games-button {
   background-color: #FFBC00;
   color: #000;
@@ -329,44 +329,35 @@ margin: 20px;
   color: #000;
 } */
 
-
-
-
-/* src/components/GameDetail.css */
-
-/* Style the game details container */
 .game-detail {
-  background-color: #141b0d; /* Dark green background color */
-  color: #fff; /* Text color */
+  background-color: #141b0d;
+  color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
-  max-width: 600px; /* Limit the width of the details */
-  margin: 0 auto; /* Center horizontally */
-  margin-top: 20px; /* Add some spacing from the top */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-/* Style headings */
 .game-detail h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Style paragraphs */
 .game-detail p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* Style the back button */
 .back-button {
   display: block;
-  margin-top: 20px; /* Add spacing below the details */
+  margin-top: 20px;
   text-align: center;
 }
 
 .back-button a {
-  color: #ffcc29; /* Yellow color for the link */
+  color: #ffcc29;
   text-decoration: none;
   font-weight: bold;
 }
@@ -375,41 +366,35 @@ margin: 20px;
   text-decoration: underline;
 }
 
-/* src/components/GameDetailPage.css */
-
-/* Style the game detail page container */
 .game-detail-page {
-  background-color: #141b0d; /* Dark green background color */
-  color: #fff; /* Text color */
+  background-color: #141b0d;
+  color: #fff;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
-  max-width: 600px; /* Limit the width of the details */
-  margin: 0 auto; /* Center horizontally */
-  margin-top: 20px; /* Add some spacing from the top */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-/* Style headings */
 .game-detail-page h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Style paragraphs */
 .game-detail-page p {
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* Style the back button */
 .back-button {
   display: block;
-  margin-top: 20px; /* Add spacing below the details */
+  margin-top: 20px;
   text-align: center;
 }
 
 .back-button a {
-  color: #ffcc29; /* Yellow color for the link */
+  color: #ffcc29;
   text-decoration: none;
   font-weight: bold;
 }
@@ -459,21 +444,32 @@ margin: 20px;
   border-radius: 8px;
 }
 
+footer {
+  text-align: center;
+  background-color: #1f3b1c;
+  color: #ccba80;
+  padding: 10px;
+  margin-top: 20rem;
+}
+
 @media (min-width: 306px) {
   .center-container {
-    height: 40vh;
+    height: 25vh;
   }
 
   .button-container {
-    margin-top: 75px;
+    margin-top: 30px;
+    margin: 0px;
+    justify-content: center;
   }
-.search-container{
-  width: 100%;
-  
-}
-  
-.show-games-button, .show-games-button-1, .show-games-button-2, .show-games-button-3 {
-  padding: 10px 12px;
-}
+  .search-container {
+    width: 100%;
+  }
 
+  .show-games-button,
+  .show-games-button-1,
+  .show-games-button-2,
+  .show-games-button-3 {
+    padding: 10px 12px;
+  }
 }

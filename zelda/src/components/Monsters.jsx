@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 function Monsters() {
   const [monsters, setMonsters] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -42,6 +41,12 @@ function Monsters() {
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
+    scrollToTop(); // Scroll to top when a page button is clicked
+  };
+
+  // Function to scroll to the top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0 });
   };
 
   return (
@@ -105,6 +110,9 @@ function Monsters() {
             {index + 1}
           </button>
         ))}
+        <Link to="/" style={{ margin: "15px" }}>
+          Back to Home
+        </Link>
       </div>
     </div>
   );
